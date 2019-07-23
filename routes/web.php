@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'PostsController@index')->name('top');
+Route::resource('posts', 'PostsController', ['only' => ['create', 'store']]);
