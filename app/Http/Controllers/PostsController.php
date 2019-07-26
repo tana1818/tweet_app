@@ -37,4 +37,14 @@ class PostsController extends Controller
         return redirect() -> route('top');
     }
 
+    public function show($post_id)
+    {
+        // $user = Auth::user();
+        $post = Post::findOrFail($post_id);
+
+        return view('posts.show',[
+            'post' => $post,
+        ]);
+    }
+
 }

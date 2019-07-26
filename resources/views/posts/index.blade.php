@@ -28,6 +28,13 @@
                             コメント {{ $post->comments->count() }}件
                         </span>
                     @endif
+
+                    <span class="mr-2">
+                        <a class="badge badge-primary" href="{{ route('posts.show', ['post' => $post]) }}">
+                            詳細
+                        </a>
+                    </span>
+                    
                 </div>
             </div>
         @endforeach
