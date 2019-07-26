@@ -3,11 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Post;
+use App\User;
 
 class Comment extends Model
 {
     protected $fillable = [
-        'body',
+        'body', 'post_id', 'user_id'
     ];
 
     public function post()
