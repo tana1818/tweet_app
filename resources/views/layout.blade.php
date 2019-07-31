@@ -11,6 +11,15 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous"
     >
+
+    <style>
+        body {
+            background-color: #f8fafc;
+        }
+        .border {
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
